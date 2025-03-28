@@ -1,0 +1,8 @@
+{
+  "dbUrl": "mongodb+srv://techhelp:rbjh9N0H8Gjqz5wb@cluster0.ftomw.mongodb.net/",
+  "cookieOption": {
+    "httpOnly": false,
+    "secure": false,
+    "maxAge": 10800000
+  }
+}

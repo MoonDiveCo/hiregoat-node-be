@@ -1,0 +1,38 @@
+{
+  "author": "HireGoat",
+  "port": 1951,
+  "hostAddress": "http://localhost:",
+  "databaseHost": "127.0.0.1",
+  "databasePort": "27017",
+  "databaseName": "",
+  "jwtSecret": "nodeJwt",
+  "jwtOptions": {
+    "expiresIn": "24h"
+  },
+  "emailAuth": {
+    "user": "moondiveco@gmail.com",
+    "pass": "nruqqyxytnvkajgj"
+  },
+  "swaggerDefinition": {
+    "info": {
+      "title": "[ Welcome to HireGoat Server Side API at MoonDive ]",
+      "version": "2.0",
+      "description": "HireGoat API DOCS"
+    },
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "AWS": {
+    "accessKeyId": "AKIA4URSQB6RQO6AQUXQ",
+    "secretAccessKey": "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",
+    "region": "ap-south-1",
+    "smsSecret": ""
+  },
+  "secretAuthKey": ""
+}
