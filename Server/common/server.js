@@ -5,10 +5,7 @@ import cors from 'cors';
 import * as path from 'path';
 import morgan from 'morgan';
 import cookieParser from 'cookie-parser';
-import swaggerUi from 'swagger-ui-express';
-import swaggerJSDoc from 'swagger-jsdoc';
 import apiErrorHandler from '../helper/apiErrorHandler';
-import userRouter from '../api/v1/controllers/user/routes';
 const app = express();
 
 const server = http.createServer(app);
@@ -36,24 +33,6 @@ class ExpressServer {
 
   router(routes) {
     routes(app);
-    return this;
-  }
-
-  configureSwagger(swaggerDefinition) {
-    const options = {
-      // swaggerOptions : { authAction :{JWT :{name:"JWT", schema :{ type:"apiKey", in:"header", name:"Authorization", description:""}, value:"Bearer <JWT>"}}},
-      swaggerDefinition,
-      apis: [
-        path.resolve(`${root}/server/api/v1/controllers/**/*.js`),
-        path.resolve(`${root}/api.yaml`),
-      ],
-    };
-
-    app.use(
-      '/api-docs',
-      swaggerUi.serve,
-      swaggerUi.setup(swaggerJSDoc(options))
-    );
     return this;
   }
 

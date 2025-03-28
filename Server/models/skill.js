@@ -1,8 +1,6 @@
 // TODO: need to be review
 
 import mongoose, { Schema } from "mongoose";
-import mongoosePaginate from "mongoose-paginate";
-import mongooseAggregatePaginate from "mongoose-aggregate-paginate";
 
 const skillSchema = new Schema(
   {
@@ -27,10 +25,6 @@ const skillSchema = new Schema(
     timestamps: true,
   }
 );
-
-// Add pagination plugins
-skillSchema.plugin(mongoosePaginate);
-skillSchema.plugin(mongooseAggregatePaginate);
 
 const Skill = mongoose.model("skill", skillSchema);
 

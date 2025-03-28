@@ -1,6 +1,4 @@
 import mongoose, { Schema } from 'mongoose';
-import mongoosePaginate from 'mongoose-paginate';
-import mongooseAggregatePaginate from 'mongoose-aggregate-paginate';
 
 const userSchema = new Schema(
     {
@@ -236,8 +234,6 @@ const userSchema = new Schema(
     { timestamps: true }
 );
 
-userSchema.plugin(mongoosePaginate);
-userSchema.plugin(mongooseAggregatePaginate);
 
 const User = mongoose.model('user', userSchema);
 

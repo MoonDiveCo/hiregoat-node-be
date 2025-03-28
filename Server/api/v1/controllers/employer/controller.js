@@ -1,15 +1,15 @@
 import Joi from 'joi';
 import bcrypt from 'bcrypt';
-import { userServices } from '../../services/candidate';
+import { employerServices } from '../../services/employer';
 import User from '../../../../models/user';
 
 const {
   findUser
-} = userServices;
+} = employerServices;
 
 
-export class employeeController {
+export class employerController {
  
 }
 
-export default new employeeController();
+export default new employerController();

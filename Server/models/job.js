@@ -1,6 +1,4 @@
 import mongoose, { Schema } from 'mongoose';
-import mongoosePaginate from 'mongoose-paginate';
-import mongooseAggregatePaginate from 'mongoose-aggregate-paginate';
 
 const jobSchema = new Schema(
     {
@@ -108,8 +106,6 @@ const jobSchema = new Schema(
     }
 );
 
-jobSchema.plugin(mongoosePaginate);
-jobSchema.plugin(mongooseAggregatePaginate);
 const User = mongoose.model('job', jobSchema);
 
 export default User;

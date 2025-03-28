@@ -1,8 +1,6 @@
 // src/models/Chat.js
 
 import mongoose, { Schema } from 'mongoose';
-import mongoosePaginate from 'mongoose-paginate';
-import mongooseAggregatePaginate from 'mongoose-aggregate-paginate';
 
 const MessageSchema = new mongoose.Schema({
     userId: {
@@ -24,8 +22,6 @@ const MessageSchema = new mongoose.Schema({
     timestamps: true
   });
 
-MessageSchema.plugin(mongoosePaginate);
-MessageSchema.plugin(mongooseAggregatePaginate);
 
 const Message = mongoose.model('message', MessageSchema);
 

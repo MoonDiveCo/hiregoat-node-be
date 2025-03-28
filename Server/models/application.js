@@ -1,6 +1,4 @@
 import mongoose, { Schema } from 'mongoose';
-import mongoosePaginate from 'mongoose-paginate';
-import mongooseAggregatePaginate from 'mongoose-aggregate-paginate';
 
 const applicationSchema = new Schema(
   {

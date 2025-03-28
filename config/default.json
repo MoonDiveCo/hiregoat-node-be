@@ -28,11 +28,5 @@
       }
     }
   },
-  "AWS": {
-    "accessKeyId": "AKIA4URSQB6RQO6AQUXQ",
-    "secretAccessKey": "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",
-    "region": "ap-south-1",
-    "smsSecret": ""
-  },
   "secretAuthKey": ""
 }
